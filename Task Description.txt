@@ -1,0 +1,13 @@
+Task Description:-
+1. Develop a command-line weather checking application using Python, use options based to control the application behavior – 
+2. Implement functionalities such as checking weather by city name, CRUD operation on favorite list of city, auto refresh after 15-30 sec.
+3. Ensure proper error handling and data validation. – 
+4. You’ll need to use API for getting data from the web. 
+5. Create a proper documentation of commands to use 
+
+Some Help: - 
+making request in Python – 
+how API works and how to use in python – 
+check docs of some API 
+You can use this API: https://www.weatherapi.com/
+

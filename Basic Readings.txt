@@ -1,0 +1,79 @@
+* What is weather checking application?
+A weather checking application, often referred to as a weather app, is a software program or mobile application designed to provide users with up-to-date weather information and forecasts for various locations. These applications use weather data from meteorological sources and services to offer real-time and predictive weather information to users. Here are some key features and functionalities commonly found in weather checking applications:
+1. Current Weather Data: Weather apps typically display the current weather conditions for a specific location, including temperature, humidity, wind speed and direction, precipitation, visibility, and atmospheric pressure.
+2. Location-Based Services: Weather apps often use GPS or user-entered location data to provide hyper-local weather forecasts. Users can get weather information for their current location or any other location of interest.
+3. Severe Weather Alerts: Weather apps can provide alerts and warnings for severe weather events such as storms, hurricanes, tornadoes, and extreme temperatures. Users receive notifications to stay informed and safe.
+4. Customizable Units: Users can often customize the units of measurement for temperature (e.g., Celsius or Fahrenheit), wind speed, and other weather parameters.
+5. Sunrise and Sunset Times: Users can check the times of sunrise and sunset for a given location.
+6. Weather API Integration: Weather apps often integrate with external weather APIs (Application Programming Interfaces) to retrieve and display weather data.
+Weather checking applications are widely used by individuals, travelers, outdoor enthusiasts, and businesses to plan daily activities, make informed decisions, and stay safe during changing weather conditions. They are available on various platforms, including mobile devices (iOS and Android), web browsers, and desktop computers. 
+
+* What is command line?
+The command line, also known as a command-line interface (CLI), is a text-based interface used for interacting with a computer or software by typing commands into a terminal or command prompt. In a command-line environment, users communicate with the computer or operating system by entering text-based commands rather than using a graphical user interface (GUI) with buttons and menus.
+Here are some key characteristics and concepts associated with the command line:
+1. Text-Based Input: Users type commands as text strings, typically followed by various options, arguments, and parameters. These commands are executed by the computer's operating system or specific software.
+2. Prompt: The command line displays a prompt, which is often a symbol or text indicating that the system is ready to accept commands. For example, in a Unix-like system, the prompt is commonly represented as a dollar sign ($) or a hash symbol (#) for root access.
+3. Options and Arguments: Many commands can be customized with options and arguments that modify their behavior. Options are typically preceded by a hyphen (-) or double hyphen (--), while arguments are values or parameters provided to the command.
+4. File System Navigation: Users can navigate the file system by using commands like `cd` (change directory), `ls` (list files), `pwd` (print working directory), and `mkdir` (make directory).
+5. Redirection and Pipes: Users can redirect the input and output of commands to and from files using operators like `>`, `<`, and `|` (pipe). This enables complex data processing and manipulation.
+6. Scripting Languages: Command-line environments often support scripting languages like Bash, PowerShell, or Python, allowing users to create powerful scripts and automate tasks.
+The command line is favored by many developers, system administrators, and power users for its efficiency, flexibility, and scripting capabilities. It provides fine-grained control over a computer's operations and is often used for tasks that require automation, remote management, or access to advanced system features.
+
+* What is API?
+API stands for Application Programming Interface. It is a set of rules and protocols that allows different software applications to communicate with each other. APIs define the methods and data formats that applications can use to request and exchange information. Here are some key points to understand about APIs:
+1. Interoperability: APIs enable different software systems, written in different programming languages or running on different platforms, to interact and work together. They provide a standard way for these systems to communicate.
+2. Abstraction: APIs abstract the underlying complexity of how a particular software component or service works. This abstraction allows developers to use the functionality without needing to understand the inner workings in detail.
+3. Reusability: APIs promote code reusability. Developers can create reusable libraries, modules, or services with well-defined APIs, which can be easily incorporated into various projects.
+4. Security: APIs can include authentication and authorization mechanisms to ensure that only authorized users or applications can access specific functionality or data.
+5. Data Exchange: APIs are commonly used for data exchange between different applications. This can involve sending and receiving data in various formats, such as JSON (JavaScript Object Notation) or XML (Extensible Markup Language).
+6. Service Access: Many APIs are associated with web services or cloud services, allowing developers to access features like payment processing, geolocation, social media integration, and more.
+Developers use APIs extensively to build software applications that leverage external services, data sources, and functionality, enabling them to create more feature-rich and interconnected applications.
+
+* What is ‘requests’ in python and how to use?
+`requests` is a popular Python library used for making HTTP requests to web services or APIs. It simplifies the process of sending HTTP requests and handling HTTP responses in Python. It is commonly used to interact with web services, fetch data from websites, or make API calls.
+To use the `requests` library within a Python environment, you first need to ensure that the ‘requests’ library is installed. You can install it using pip if it's not already installed:
+```bash
+pip install requests
+```
+Once `requests` is installed, you can use it in Python by importing the library and then making HTTP requests. Here's a basic example of how to use `requests` within Python:
+
+```python
+# Import the requests library
+import requests
+
+# Define the URL you want to send an HTTP GET request to
+url = 'https://api.example.com/data'
+
+# Send an HTTP GET request to the URL
+response = requests.get(url)
+
+# Check the HTTP response status code
+if response.status_code == 200:
+    # If the request was successful (status code 200), you can access the response content
+    data = response.json()  # Assuming the response is in JSON format
+    print(data)
+else:
+    # If there was an error, you can handle it accordingly
+    print(f"HTTP Error: {response.status_code}")
+```
+In this example:
+1. We import the `requests` library.
+2. We define the URL to which we want to send an HTTP GET request (`url`).
+3. We use `requests.get(url)` to send the GET request to the specified URL.
+4. We check the HTTP response status code using `response.status_code` to see if the request was successful (status code 200).
+5. If the request was successful, we access the response content, assuming it's in JSON format (you can use `response.text` for plain text responses).
+6. If there was an error, we handle it by printing an error message.
+
+You can customize the request by adding headers, query parameters, or request data, depending on the requirements of the API or web service you are interacting with.
+Python's interactive environment is particularly helpful for exploring APIs and web services, as you can make requests and interact with the responses in real-time, allowing you to experiment and understand how to work with external data sources effectively.
+
+* Open weather map API?	
+OpenWeatherAPI, or OpenWeatherMap API, is an online service that provides access to weather data and forecasts for various locations around the world. It's a popular API used by developers, businesses, and individuals to integrate weather information into their applications, websites, and services.
+Key features and data provided by OpenWeatherAPI include:
+1. Current Weather Data: Real-time weather information, including temperature, humidity, wind speed and direction, precipitation, and more for a specific location.
+2. Weather Forecasts: Multi-day weather forecasts that include details for different times of the day, such as morning, afternoon, evening, and night.
+3. Historical Weather Data: Historical weather data for past dates, allowing users to retrieve information about past weather conditions.
+5. Geocoding: The API can provide weather data for a location based on its coordinates (latitude and longitude) or by specifying the location name.
+6. Various Data Formats: OpenWeatherAPI supports various data formats, including JSON and XML, making it versatile for different programming languages and platforms.
+7. Customization: Users can customize the data units (e.g., Celsius or Fahrenheit) and language for the response.
+8. API Keys: Access to the API typically requires an API key, which helps manage usage and ensure data security.
